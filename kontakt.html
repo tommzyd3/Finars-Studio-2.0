@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — FIN ARS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-architecture" aria-hidden="true">
+    <div class="bg-slide" style="background-image:url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="bg-overlay"></div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">FINARS</span><span class="logo-sub">center za arhitekturo</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Domov</a><a href="projekti.html">Projekti</a><a href="o-nas.html">O nas</a><a href="storitve.html">Storitve</a><a href="kontakt.html" class="active">Kontakt</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Meni"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Povežimo se</p><h1>Kontakt</h1><p>Veseli bomo vašega sporočila.</p></div></section>
+    <section class="section" style="padding-top:0"><div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Podatki o podjetju</h2>
+          <div class="contact-block"><h3>Naslov</h3><p>FIN ARS d.o.o.<br>Podvine 36<br>1410 Zagorje ob Savi</p></div>
+          <div class="contact-block"><h3>Vodstvo</h3>
+            <p><strong>Kristijan Čuk</strong>, u.d.i.a.<br><a href="mailto:kristijan.cuk@finars.si">kristijan.cuk@finars.si</a><br>+386 41 686 959</p>
+            <p style="margin-top:1rem"><strong>Borut Dolar</strong><br><a href="mailto:borut.dolar@finars.si">borut.dolar@finars.si</a><br>+386 31 370 172</p>
+          </div>
+          <div class="contact-block"><h3>Splošni kontakt</h3><p><a href="mailto:info@finars.si">info@finars.si</a><br>Tel: 03 566 05 46</p></div>
+          <div class="contact-block"><h3>Matični podatki</h3><p>Davčna št.: SI 70790817<br>Matična št.: 2144921000</p></div>
+        </div>
+        <div class="contact-form">
+          <h2 style="font-size:1.3rem;font-weight:500;margin-bottom:1.5rem">Pošljite sporočilo</h2>
+          <form onsubmit="event.preventDefault(); alert('Hvala! Sporočilo bi se poslalo na info@finars.si');">
+            <label for="name">Ime in priimek</label>
+            <input type="text" id="name" required placeholder="Vaše ime">
+            <label for="email">E-pošta</label>
+            <input type="email" id="email" required placeholder="vas@email.si">
+            <label for="message">Sporočilo</label>
+            <textarea id="message" required placeholder="Opišite projekt..."></textarea>
+            <button type="submit" class="btn btn-primary" style="width:100%">Pošlji</button>
+          </form>
+        </div>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="logo-mark">FINARS</span><p>Center za arhitekturo d.o.o.</p></div>
+      <div class="footer-links">
+        <div><h4>Navigacija</h4><a href="projekti.html">Projekti</a><a href="o-nas.html">O nas</a><a href="kontakt.html">Kontakt</a></div>
+        <div><h4>Kontakt</h4><p>Podvine 36, 1410 Zagorje ob Savi</p><p><a href="mailto:info@finars.si">info@finars.si</a></p></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>© 2026 FIN ARS d.o.o.</p></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
